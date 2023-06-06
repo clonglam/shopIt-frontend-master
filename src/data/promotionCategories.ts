@@ -42,7 +42,7 @@ const promotionCategories: PromotionCategory[] = [
     id: 4,
     title: 'Emeco Furniture',
     subtitle: 'Shop',
-    href: '/collections',
+    href: '/collections/kitchen-dining',
     image:
       'https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80',
   },
@@ -50,7 +50,7 @@ const promotionCategories: PromotionCategory[] = [
     id: 5,
     title: 'Scandinavian Style',
     subtitle: 'Shop',
-    href: '/collections',
+    href: '/collections/outdoor',
     image:
       'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=958&q=80',
   },
