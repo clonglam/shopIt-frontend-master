@@ -2,7 +2,7 @@ import { Box, Heading } from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
 import { z } from 'zod'
 
-// import useCollections from '../../collections/hooks/useCollections'
+import useCollections from '../../collections/hooks/useCollections'
 import Form, {
   SubmitButton,
   TextAreaInputField,
@@ -49,7 +49,7 @@ interface Props {
 }
 
 const EditProductForm = ({ product }: Props) => {
-  // const { data: collections } = useCollections()
+  const { data: collections } = useCollections()
   const navigate = useNavigate()
 
   console.log('product', product)
@@ -113,15 +113,15 @@ const EditProductForm = ({ product }: Props) => {
             label="Title*"
             placeholder="Product Title"
           />
-          {/* 
+
           <AutoComplete
             name="collectionIds"
             label="Collection*"
             placeholder="Search Collections ..."
-            selections={collections.map(({ id, title }) => {
+            selections={collections?.map(({ id, title }) => {
               return { id: `${id}`, title, value: id }
             })}
-          /> */}
+          />
 
           <TextInputField
             name="slug"

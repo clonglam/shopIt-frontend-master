@@ -5,11 +5,9 @@ import {
   FormErrorMessage,
   FormLabel,
   FormLabelProps,
-  Grid,
   Input,
   List,
   ListItem,
-  SimpleGrid,
   Tag,
   Text,
   TextProps,
@@ -37,7 +35,7 @@ interface Props {
     [x: string]: any
   }>
   placeholder?: string
-  selections: OptionType[]
+  selections?: OptionType[]
   labelStyleProps?: FormLabelProps
   errorStyleProps?: TextProps
   // inputStyleProps?: InputProps
@@ -60,7 +58,7 @@ const AutoComplete = (props: Props) => {
     name,
     setValue: setHookFormValue,
     getValues,
-    selections,
+    selections = [],
     labelStyleProps,
     placeholder = '',
     errorStyleProps,
