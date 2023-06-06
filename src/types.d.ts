@@ -5,4 +5,5 @@ type Collection = {
   description: string
   thumbnail: string
   createdAt: string
+  featureProductId: number | null
 }

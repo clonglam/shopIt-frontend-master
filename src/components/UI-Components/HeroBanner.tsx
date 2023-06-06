@@ -70,7 +70,7 @@ const HeroBanner = ({ banner }: Props) => {
         >
           <Stack zIndex={99} gap={3}>
             <SubTitle>{banner.headline}</SubTitle>
-            <Heading fontSize="7xl" fontWeight="100">
+            <Heading fontSize="7xl" fontWeight="100" color="gray.800">
               {banner.amplify || ''}
             </Heading>
 

@@ -13,8 +13,8 @@ interface Product {
   thumbnail?: string
   inventory: number
   createdAt: string
-  updateAt: string
-  deltedAt?: string
+  updatedAt: string
+  deletedAt: string | null
 }
 
 type CollectionsOnProducts = {
