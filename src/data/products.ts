@@ -1,0 +1,60 @@
+import { Product } from '../components/products/hooks/productService'
+
+const products: Product[] = [
+  {
+    id: 1,
+    slug: 'signatu-t-shirt',
+    title: 'signature Tee shirt',
+    description: 'Designed By Awarded Designer, Penguunasf safg. ',
+    collectionsOnProducts: [],
+    inventory: 1,
+    SKU: '12321923123123',
+    price: 42142.21,
+    gallery: [
+      'https://images.unsplash.com/photo-1682353213925-63ab4e0340df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
+    ],
+    createdAt: '2023-04-27T14:25:36.123456Z',
+    updateAt: '2023-04-27T14:25:36.123456Z',
+  },
+  {
+    id: 2,
+    title: 'signature Tee shirt',
+    slug: 'amazing-product',
+    collectionsOnProducts: [],
+    description: 'Designed By Awarded Designer, Penguunasf safg. ',
+    inventory: 1,
+    SKU: '12321923123123',
+    price: 42142.21,
+    gallery: [],
+    createdAt: '2023-04-27T14:25:36.123456Z',
+    updateAt: '2023-04-27T14:25:36.123456Z',
+  },
+  {
+    id: 3,
+    title: 'signature Tee shirt',
+    slug: 'amazi-product',
+    description: 'Designed By Awarded Designer, Penguunasf safg. ',
+    collectionsOnProducts: [],
+    inventory: 1,
+    SKU: '12321923123123',
+    price: 42142.21,
+    gallery: [],
+    createdAt: '2023-04-27T14:25:36.123456Z',
+    updateAt: '2023-04-27T14:25:36.123456Z',
+  },
+  {
+    id: 4,
+    title: 'signature Tee shirt',
+    slug: '1mazing-24roduct',
+    description: 'Designed By Awarded Designer, Penguunasf safg. ',
+    collectionsOnProducts: [],
+    inventory: 1,
+    SKU: '12321923123123',
+    price: 42142.21,
+    gallery: [],
+    createdAt: '2023-04-27T14:25:36.123456Z',
+    updateAt: '2023-04-27T14:25:36.123456Z',
+  },
+]
+
+export default products
