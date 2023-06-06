@@ -57,6 +57,7 @@ const LoginForm = () => {
       padding={8}
       margin="auto"
       bgColor="#fff"
+      color="gray.800"
       as="form"
       onSubmit={handleSubmit(onSubmit)}
     >

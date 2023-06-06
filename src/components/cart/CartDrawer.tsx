@@ -68,7 +68,7 @@ const CartDrawerContent = ({ cartItems }: { cartItems: CartItem[] }) => {
 
 const CartDrawerBody = ({ cartItems }: { cartItems: CartItem[] }) => {
   return (
-    <DrawerBody>
+    <DrawerBody bgColor="gray.100" color="gray.800">
       <Stack>
         {cartItems.map(({ productId, product, quantity }) => (
           <CartDrawerItemCard

@@ -7,10 +7,12 @@ function CartDrawerEmptyCart() {
   const onClose = useCartStore((c) => c.onClose)
 
   return (
-    <DrawerBody as={Stack} justifyContent="center">
-      <Text textAlign="center">Bummer! You have nothing in your cart.</Text>
+    <DrawerBody as={Stack} justifyContent="center" bgColor="gray.100">
+      <Text textAlign="center" color="gray.800">
+        Bummer! You have nothing in your cart.
+      </Text>
 
-      <Link to="/collections/new">
+      <Link to="/products">
         <Text textAlign="center" color="primary.500" onClick={() => onClose()}>
           Checkout our new items.
         </Text>

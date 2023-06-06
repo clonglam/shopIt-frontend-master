@@ -10,7 +10,7 @@ const Layout = () => {
     <>
       <NavBanner />
       <NavBar />
-      <Box backgroundColor="gray.200" minHeight="80vh">
+      <Box backgroundColor="gray.200" minHeight="80vh" color="gray.800">
         <Outlet />
       </Box>
       <Footer />
