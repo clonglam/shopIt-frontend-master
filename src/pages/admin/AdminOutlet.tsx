@@ -7,7 +7,7 @@ const AdminOutlet = () => {
   const getUserByToken = useAuthStore((a) => a.getUserByToken)
   const user = getUserByToken()
   const location = useLocation()
-
+  console.log('user Admin outlet', user)
   return !user || user.role != 'ADMIN' ? (
     <Navigate to="/login" state={{ from: location }} />
   ) : (

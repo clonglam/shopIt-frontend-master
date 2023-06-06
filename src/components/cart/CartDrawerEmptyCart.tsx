@@ -7,7 +7,7 @@ function CartDrawerEmptyCart() {
   const onClose = useCartStore((c) => c.onClose)
 
   return (
-    <DrawerBody as={Stack} justifyContent="center" bgColor="gray.100">
+    <DrawerBody as={Stack} justifyContent="center" bgColor="white">
       <Text textAlign="center" color="gray.800">
         Bummer! You have nothing in your cart.
       </Text>

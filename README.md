@@ -1,6 +1,6 @@
 # Real World Ecommerce System
 
-![screenshot of Ecomerce System](/resources/screenshot.png)
+![screenshot of Ecomerce System](/resources/cover.png)
 
 ## Table of Contents
 

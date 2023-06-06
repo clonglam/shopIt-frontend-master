@@ -1,5 +1,4 @@
 import { Box, SimpleGrid } from '@chakra-ui/react'
-import React from 'react'
 
 import BarChart from '../../components/UI-Components/charts/BarChart'
 import DashCard from '../../components/UI-Components/DashCard'
@@ -18,7 +17,9 @@ const AdminDashboard = () => {
         <DashCard title="Revenue Yearly" data="$ 39,123.42" />
         <DashCard title="Client Reach" data="423" />
       </SimpleGrid>
-      <BarChart />
+      <Box padding={5}>
+        <BarChart />
+      </Box>
     </div>
   )
 }
