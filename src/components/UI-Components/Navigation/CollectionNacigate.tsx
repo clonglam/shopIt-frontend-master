@@ -2,7 +2,7 @@ import { HStack, Text } from '@chakra-ui/react'
 import { NavLink } from 'react-router-dom'
 
 import useProductQueryStore from '../../../store/collectionQueryStore'
-import useCollections from '../../collections/hooks/useCollection2'
+import useCollections from '../../collections/hooks/useCollections'
 
 const CollectionNacigate = () => {
   const setCollectionSlug = useProductQueryStore((s) => s.setCollectionSlug)

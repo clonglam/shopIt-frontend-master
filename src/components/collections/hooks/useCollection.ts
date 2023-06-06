@@ -1,4 +1,4 @@
-import useCollections from './useCollection2'
+import useCollections from './useCollections'
 
 const useCollection = (collectionId: number) => {
   const { data: collections } = useCollections()

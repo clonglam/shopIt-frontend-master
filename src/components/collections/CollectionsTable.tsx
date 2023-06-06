@@ -3,8 +3,8 @@ import { createColumnHelper } from '@tanstack/react-table'
 import { format } from 'date-fns'
 import { Link } from 'react-router-dom'
 
-// import Table from '../Table/Table'
-import useCollections from './hooks/useCollection2'
+import Table from '../Table/Table'
+import useCollections from './hooks/useCollections'
 
 const columnHelper = createColumnHelper<Collection>()
 
@@ -44,12 +44,12 @@ const columns = [
 ]
 
 const CollectionsTable = () => {
-  // const { data: collections, isLoading, error } = useCollections()
+  const { data: collections, isLoading, error } = useCollections()
 
-  // if (isLoading) return <Skeleton width="100%" height="380px" />
-  // if (error) return <Text>There is a Error.</Text>
+  if (isLoading) return <Skeleton width="100%" height="380px" />
+  if (error) return <Text>There is a Error.</Text>
 
-  // return <Table columns={columns} data={collections!} />
+  return <Table columns={columns} data={collections!} />
   return <></>
 }
 
